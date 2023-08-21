@@ -59,48 +59,71 @@ nav{
 
 .slider{
     background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); */
     overflow: hidden;
 }
 
 .sliderWrapper{
   display: flex;
-  width: 500vw;
-  transition: all 1.5s ease-in-out;
+  width: 100%;
+  transition: transform 1.5s ease-in-out;
 
 }
 
 
 .sliderItem {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+}
 
-.sliderBg {
-    width: 750px;
-    height: 750px;
-    border-radius: 50%;
-    position: absolute;
-  }
+  /* Adjust the slidebg's height and position */
+.slidebg {
+  width: 100%;
+  height: 120%; /* Adjust the height for proper coverage */
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgba(200, 200, 200, 0.25);
+  top: -10%; /* Push the background slightly higher for better alignment */
+}
   
+/* Adjust the sliderImg's size */
 .sliderImg {
-    z-index: 1;
-  }
+  width: 300px; /* Adjust the width */
+  height: auto; /* Let the height adjust automatically */
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+/* Adjust the sliderTitle's alignment and size */
+.sliderItem h1.sliderTitle {
+  font-size: 30px; /* Adjust the font size */
+  font-weight: 700; /* Adjust the font weight */
+  margin-top: 20px; /* Add some space between title and image */
+}
 
 
-.sliderTitle {
-    position: absolute;
-    top: 10%;
-    right: 10%;
-    font-size: 60px;
-    font-weight: 900;
-    text-align: center;
-    color: white;
-    z-index: 1;
-  }
+/* .sliderTitle {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size: 60px;
+  font-weight: 900;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  height: 100px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 
 .sliderPrice {
     position: absolute;
@@ -126,3 +149,25 @@ nav{
     z-index: 1;
     cursor: pointer;
   }
+
+  .buyButton:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .sliderItem:nth-child(1) .sliderBg {
+    background-color: #369e62;
+  }
+  .sliderItem:nth-child(2) .sliderBg {
+    background-color: rebeccapurple;
+  }
+  .sliderItem:nth-child(3) .sliderBg {
+    background-color: teal;
+  }
+  .sliderItem:nth-child(4) .sliderBg {
+    background-color: cornflowerblue;
+  }
+  .sliderItem:nth-child(5) .sliderBg {
+    background-color: rgb(124, 115, 80);
+  }
+
