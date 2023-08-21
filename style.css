@@ -1,173 +1,191 @@
 body{
-    font-family: 'Oswald', sans-serif;
-    padding: 0;
-    margin: 0;
+  font-family: 'Oswald', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 nav{
-    background-color: black;
-    color: white;
-    padding: 20px 50px;
-    
+  background-color: black;
+  color: white;
+  padding: 20px 50px;
+  
 }
 
 .navtop{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .search{
-    display: flex;
-    align-items: center;
-    background-color: gray;
-    padding: 10px 20px;
-    border-radius: 10px;
+  display: flex;
+  align-items: center;
+  background-color: gray;
+  padding: 10px 20px;
+  border-radius: 10px;
 
 }
 
 .searchInput{
-    border: none;
-    background-color: transparent;
+  border: none;
+  background-color: transparent;
 }
 
 .searchInput::placeholder{
-    color: lightgray;
+  color: lightgray;
 
 }
 
 .limitedOffer{
-    font-size: 20px;
-    border-bottom: 2px solid green;
-    cursor: pointer;
+  font-size: 20px;
+  border-bottom: 2px solid green;
+  cursor: pointer;
 }
 
 .navBottom{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
 .menuItem{
-    margin-right: 50px;
-    cursor: pointer;
-    color: lightgray;
-    font-weight: 400;
+  margin-right: 50px;
+  cursor: pointer;
+  color: lightgray;
+  font-weight: 400;
 
 }
 
-.slider{
-    background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
-    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); */
-    overflow: hidden;
+.slider {
+background: linear-gradient(
+  rgba(200, 200, 200, 0.25),
+  rgba(200, 200, 200, 0.25)
+), url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+/* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); */
+overflow: hidden;
 }
 
 .sliderWrapper{
-  display: flex;
-  width: 100%;
-  transition: transform 1.5s ease-in-out;
+display: flex;
+width: 100%;
+transition: transform 1.5s ease-in-out;
 
 }
 
 
 .sliderItem {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  text-align: center;
-  padding: 20px;
-  box-sizing: border-box;
-  color: white;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: relative;
+text-align: center;
+padding: 20px;
+box-sizing: border-box;
+color: white;
 }
 
-  /* Adjust the slidebg's height and position */
-.slidebg {
-  width: 100%;
-  height: 120%; /* Adjust the height for proper coverage */
-  border-radius: 50%;
-  position: absolute;
-  background-color: rgba(200, 200, 200, 0.25);
-  top: -10%; /* Push the background slightly higher for better alignment */
+/* Adjust the slidebg's height and position */
+.sliderbg {
+width: 100%;
+height: 120%; /* Adjust the height for proper coverage */
+border-radius: 50%;
+position: absolute;
+/* background-color: rgba(200, 200, 200, 0.25); */
+top: -10%; /* Push the background slightly higher for better alignment */
 }
-  
+
 /* Adjust the sliderImg's size */
 .sliderImg {
-  width: 300px; /* Adjust the width */
-  height: auto; /* Let the height adjust automatically */
-  z-index: 1;
-  margin-bottom: 20px;
+width: 300px; /* Adjust the width */
+height: auto; /* Let the height adjust automatically */
+z-index: 1;
+margin-bottom: 20px;
 }
 
 /* Adjust the sliderTitle's alignment and size */
 .sliderItem h1.sliderTitle {
-  font-size: 30px; /* Adjust the font size */
-  font-weight: 700; /* Adjust the font weight */
-  margin-top: 20px; /* Add some space between title and image */
+font-size: 30px; /* Adjust the font size */
+font-weight: 700; /* Adjust the font weight */
+margin-top: 20px; /* Add some space between title and image */
 }
 
 
 /* .sliderTitle {
-  position: absolute;
-  top: 10%;
-  right: 10%;
-  font-size: 60px;
-  font-weight: 900;
-  text-align: center;
-  color: white;
-  z-index: 1;
-  height: 100px; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+position: absolute;
+top: 10%;
+right: 10%;
+font-size: 60px;
+font-weight: 900;
+text-align: center;
+color: white;
+z-index: 1;
+height: 100px; 
+display: flex;
+align-items: center;
+justify-content: center;
 } */
 
 .sliderPrice {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    font-size: 60px;
-    font-weight: 300;
-    text-align: center;
-    color: white;
-    border: 1px solid gray;
-    z-index: 1;
-  }
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-size: 60px;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  border: 1px solid gray;
+  z-index: 1;
+}
 
-  .buyButton {
-    position: absolute;
-    top: 50%;
-    right: 10%;
-    font-size: 30px;
-    font-weight: 900;
-    color: white;
-    border: 1px solid gray;
-    background-color: black;
-    z-index: 1;
-    cursor: pointer;
-  }
+.buyButton {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+  border: 1px solid gray;
+  background-color: black;
+  z-index: 1;
+  cursor: pointer;
+}
 
-  .buyButton:hover {
-    background-color: white;
-    color: black;
-  }
+.buyButton:hover {
+  background-color: white;
+  color: black;
+}
 
-  .sliderItem:nth-child(1) .sliderBg {
-    background-color: #369e62;
-  }
-  .sliderItem:nth-child(2) .sliderBg {
-    background-color: rebeccapurple;
-  }
-  .sliderItem:nth-child(3) .sliderBg {
-    background-color: teal;
-  }
-  .sliderItem:nth-child(4) .sliderBg {
-    background-color: cornflowerblue;
-  }
-  .sliderItem:nth-child(5) .sliderBg {
-    background-color: rgb(124, 115, 80);
-  }
+.sliderItem:nth-child(1) .sliderBg {
+  background-color: #369e62;
+}
+.sliderItem:nth-child(2) .sliderBg {
+  background-color: rebeccapurple;
+}
+.sliderItem:nth-child(3) .sliderBg {
+  background-color: teal;
+}
+.sliderItem:nth-child(4) .sliderBg {
+  background-color: cornflowerblue;
+}
+.sliderItem:nth-child(5) .sliderBg {
+  background-color: rgb(124, 115, 80);
+}
 
+.sliderItem:nth-child(1) .sliderPrice {
+  color: #369e62;
+}
+.sliderItem:nth-child(2) .sliderPrice {
+  color: white;
+}
+.sliderItem:nth-child(3) .sliderPrice {
+  color: teal;
+}
+.sliderItem:nth-child(4) .sliderPrice {
+  color: cornflowerblue;
+}
+.sliderItem:nth-child(5) .sliderPrice {
+  color: cornsilk;
+}
