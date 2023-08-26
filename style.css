@@ -223,3 +223,16 @@ justify-content: center;
   width: 50%;
   height: 100px;
 }
+
+.product {
+  height: 100vh;
+  background-color: gray;
+  position: relative;
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.productImg{
+  width: 50%;
+}
+
+
